@@ -1,0 +1,372 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fafafa;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.header {
+  height: 100vh;
+}
+
+.header-background {
+  background: url("../assets/home/bg-pattern-header.svg") no-repeat;
+  background-size: 130%;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -40%;
+  left: 0;
+  background-position: 50% 50%;
+}
+
+.logo {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.header-img img {
+  display: block;
+  width: 50%;
+  height: 40%;
+  margin: 110px auto;
+}
+
+.header-text h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  color: #333950;
+  padding: 0 10%;
+}
+
+.header-text p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #747b95;
+  padding: 0 10%;
+  margin-top: 20px;
+  font-family: Kumbh Sans;
+}
+
+.header-btn {
+  margin-top: 2rem;
+}
+.header-btn button {
+  display: block;
+  margin: 0 auto;
+  background: #5175ff;
+  box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
+  border-radius: 40px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ffffff;
+  border: none;
+  padding: 25px 60px;
+}
+
+.pricing-container {
+  margin-top: 100px;
+  padding: 0 5%;
+}
+
+.pricing-basic {
+  background: #ffffff;
+  box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
+  border-radius: 13px;
+  padding: 30px 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.pricing-basic h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #333950;
+  margin-bottom: 50px;
+}
+
+.pricing-basic h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 28px;
+  color: #333950;
+  margin-bottom: 30px;
+}
+
+.pricing-basic p:first-of-type {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #333950;
+  margin-bottom: 50px;
+}
+
+.pricing-basic p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #747b95;
+  margin-bottom: 30px;
+}
+
+.pricing-basic button {
+  background: #5175ff15;
+
+  border-radius: 28px;
+  border-radius: 40px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #5175ff;
+  border: none;
+  padding: 25px 60px;
+}
+
+.pricing-pro {
+  background-color: #5175ff;
+  background-image: url("../assets/home/Union.svg");
+  background-position: 50% 50%;
+  background-size: 250%;
+  box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
+  border-radius: 13px;
+  padding: 30px 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.pricing-pro h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.pricing-pro h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 28px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.pricing-pro p:first-of-type {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.pricing-pro p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.pricing-pro button {
+  background: #fff;
+  border-radius: 28px;
+  border-radius: 40px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #5175ff;
+  border: none;
+  padding: 25px 60px;
+}
+
+.pricing-ultimate {
+  background: #ffffff;
+  box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
+  border-radius: 13px;
+  padding: 30px 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.pricing-ultimate h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #333950;
+  margin-bottom: 50px;
+}
+
+.pricing-ultimate h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 28px;
+  color: #333950;
+  margin-bottom: 30px;
+}
+
+.pricing-ultimate p:first-of-type {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #333950;
+  margin-bottom: 50px;
+}
+
+.pricing-ultimate p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #747b95;
+  margin-bottom: 30px;
+}
+
+.pricing-ultimate button {
+  background: #5175ff15;
+
+  border-radius: 28px;
+  border-radius: 40px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #5175ff;
+  border: none;
+  padding: 25px 60px;
+}
+
+
+
+.footer {
+  background-color: #25293a;
+  background-image: url("../assets/home/bg-pattern-footer.svg");
+  background-size: 350%;
+  /* height: 100%;
+  width: 100%; */
+  background-position: 50% 50%;
+  padding: 0 0 100px 0;
+}
+
+.count-down-countainer {
+  padding: 5% 10%;
+  margin-bottom: 50px;
+}
+
+.count-down-date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.count-down-date p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 48px;
+  letter-spacing: 5px;
+  color: #ffffff;
+  padding-right: 10px;
+}
+
+.count-down-date .day {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 48px;
+  letter-spacing: 5px;
+  padding-right: 5px;
+  color: #5175ff;
+}
+
+.count-down-date .month {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 48px;
+  letter-spacing: 5px;
+  padding-right: 5px;
+  color: #5175ff;
+}
+
+.count-down-date .year {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 48px;
+  letter-spacing: 5px;
+  padding-right: 4px;
+  color: #5175ff;
+}
+
+.count-down-counter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.counts {
+  margin-right: 10px;
+  background: #333950;
+  border-radius: 4px;
+  padding: 10px 20px;
+}
+
+.counts h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.counts p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 28px;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.footer-button button {
+  display: block;
+  margin: 0 auto;
+  background: #5175ff;
+  box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
+  border-radius: 40px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ffffff;
+  border: none;
+  padding: 25px 60px;
+}
