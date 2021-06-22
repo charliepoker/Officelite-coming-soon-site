@@ -11,6 +11,7 @@ body {
 
 .header {
   height: 100vh;
+  
 }
 
 .header-background {
@@ -29,8 +30,6 @@ body {
   display: flex;
   justify-content: center;
 }
-
-
 
 .header-img img {
   display: block;
@@ -62,7 +61,7 @@ body {
 }
 
 .header-btn {
-  margin-top: 2rem;
+  margin-top: 24px;
 }
 .header-btn button {
   display: block;
@@ -80,8 +79,11 @@ body {
 }
 
 .pricing-container {
-  margin-top: 100px;
+  margin-top: 150px;
   padding: 0 5%;
+  width: 100%;
+  position: absolute;
+  top: 850px;
 }
 
 .pricing-basic {
@@ -263,21 +265,20 @@ body {
   padding: 25px 60px;
 }
 
-
-
 .footer {
   background-color: #25293a;
   background-image: url("../assets/home/bg-pattern-footer.svg");
   background-size: 350%;
-  /* height: 100%;
-  width: 100%; */
+  height: 1248px;
   background-position: 50% 50%;
-  padding: 0 0 100px 0;
+  padding: 800px 0 100px 0;
+  margin-top: 920px;
 }
 
 .count-down-countainer {
   padding: 5% 10%;
   margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .count-down-date {
