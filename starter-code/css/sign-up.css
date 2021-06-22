@@ -9,10 +9,6 @@ body {
   font-family: "Kumbh Sans", sans-serif;
 }
 
-/* .header {
-  height: 100vh;
-} */
-
 .header-background {
   background: url("../assets/home/bg-pattern-header.svg") no-repeat;
   background-size: 130%;
@@ -215,4 +211,46 @@ select {
   width: 100%;
   background-size: 130%;
   background-position: 50% 50%;
+}
+
+/* MEDIA QUERY */
+
+@media only screen and (min-width: 768px) {
+  .header-background {
+    background: transparent;
+  }
+
+  .logo {
+    margin: 70px 0 0 40px;
+    display: block;
+  }
+
+  .header-text-content-main h1 {
+    padding: 0 12%;
+  }
+
+  .header-text-content-sub p {
+    padding: 0 6%;
+  }
+
+  .counts {
+  border-radius: 13px;
+  padding: 30px 20px;
+}
+
+  .counts h1 {
+    font-size: 56px;
+  }
+
+  .counts p {
+    font-size: 16px;
+  }
+
+  form {
+    width: 60%;
+  }
+
+  .form-btn button {
+    width: 100%;
+  }
 }
