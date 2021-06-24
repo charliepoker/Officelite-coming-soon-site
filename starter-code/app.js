@@ -10,13 +10,6 @@ const email = document.querySelector("#email");
 const phone = document.querySelector("#phone");
 const company = document.querySelector("#company");
 const getOnList = document.querySelector("#submit");
-const input = document.getElementsByTagName("input");
-
-let inputArr = Array.from(input);
-console.log(inputArr);
-
-console.log(input);
-console.log(getOnList);
 
 const futureDate = new Date(); // Now
 const deadLine = futureDate.setDate(futureDate.getDate() + 30); // Set now + 30 days as the new date
@@ -62,12 +55,7 @@ window.onload = function () {
 
 // Form Validation
 
-function Validation() {
-  if (name.value === "") {
-    input.classList.add("error");
-    return;
-  }
-}
+function Validation() {}
 
 function submitForm(e) {
   e.preventDefault();
