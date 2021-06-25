@@ -5,11 +5,12 @@ const sec = document.querySelector("#sec");
 const futureDay = document.querySelector(".day");
 const futureMnth = document.querySelector(".month");
 const futureYr = document.querySelector(".year");
-const name = document.querySelector("#name");
+const fullName = document.querySelector("#name");
 const email = document.querySelector("#email");
 const phone = document.querySelector("#phone");
 const company = document.querySelector("#company");
-const getOnList = document.querySelector("#submit");
+const submitBtn = document.querySelector("#submit-btn");
+console.log(email);
 
 const futureDate = new Date(); // Now
 const deadLine = futureDate.setDate(futureDate.getDate() + 30); // Set now + 30 days as the new date
@@ -53,12 +54,33 @@ window.onload = function () {
   initializeClock(deadLine);
 };
 
-// Form Validation
-
-function Validation() {}
+// Validate form
+function validateForm() {
+  // Validate Name
+  if (fullName.value.trim() === "") {
+    fullName.classList.add("error");
+    return;
+  } else if (!/^[A-Z]+$/i.test(fullName.value)) {
+    fullName.classList.add("error");
+    return;
+  } else {
+    fullName.classList.remove("error");
+  }
+  // Validate email
+  const re =
+    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  if (email.value === "") {
+    email.classList.add("error");
+    return;
+  // } else if (!re.test(String(email.value).toLowerCase())) {
+  //   email.classList.add("error");
+  //   return;
+  }
+}
 
 function submitForm(e) {
   e.preventDefault();
+  validateForm();
 }
 
-getOnList.addEventListener("click", submitForm);
+submitBtn.addEventListener("click", submitForm);
